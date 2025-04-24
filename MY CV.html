@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/Users/drash/OneDrive/Desktop/DRASHTI07/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right,#FFD0C7, #E69DB8);
+            text-align: center;
+            color: black;
+            margin: 0;
+            padding: 0
+        }
+        .container {
+            width: 70%;
+            margin: auto;
+            background: #FFFECE;
+            padding: 50px;
+            border-radius: 50px;
+            margin-top: 70px;
+        }
+        
+        nav button {
+            background-color:#FF9A9A;
+            color: black;
+            padding: 10px;
+            border: none;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        nav button:hover {
+            background-color: #FFDDAB;
+        }
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <h1>PATEL DRASHTI</h1>
+        
+        <nav>
+            <button onclick="showSection(&#39;about&#39;)">ABOUT</button>
+            <button onclick="showSection(&#39;skill&#39;)">SKILL</button>
+            <button onclick="showSection(&#39;education&#39;)">EDUCATION</button>
+            <button onclick="showSection(&#39;contact&#39;)">CONTACT</button>
+            
+        </nav>
+        
+        <div id="about" class="content active">
+            
+            <p>HELLO !! I AM DRASHTI PATEL</p>
+            <p>Software Engineer</p>
+           
+        </div>
+        <div id="skill" class="content">
+            
+                
+                    <p>C</p>
+                    <p>C++</p>
+                    <p>HTML</p>
+                    <p>PYTHON</p>
+                
+            
+        </div>
+        <div id="education" class="content">
+            <h2>Education</h2>
+            <p>🎓 Bachelor's Degree in INFORMATION TECHNOLOGY -DDU</p>
+        </div>
+        <div id="contact" class="content">
+            <h2>Contact</h2>
+            <p>✉ Email: drashti8052@gmail.com</p>
+            <p>☎ Phone: 70xxxxxxxx</p>
+        </div>
+        
+    </div>
+
+    <script>
+        function showSection(sectionId)
+         {
+            var sections = document.querySelectorAll('.content');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+
+</body></html>
